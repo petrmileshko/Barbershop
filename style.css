@@ -98,7 +98,7 @@ background-color: #000;
 	background-color: #000;
 }
 
-/* Ссылки на страницах */
+/* Основные интерактивные элементы ввиде ссылок */
 .page-header .navigation-link,
 .footer-socials a {
 	font-family: "PT Sans Narrow", sans-serif;
@@ -127,7 +127,9 @@ background-color: #000;
 	.footer-contacts-map-link {
 		line-height: 26px;
 	}
-
+	.footer-social-item {
+		background-color: #000;
+	}
 	.about-text .htmlacademy-link {
 		font-family: "PT Sans", sans-serif;
 		font-weight: 700;
