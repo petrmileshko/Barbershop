@@ -1,3 +1,6 @@
+/*
+	Загрузка шрифтов - Начало
+*/
 @font-face {
 	font-family: "PT sans";
 	font-style: normal;
@@ -29,7 +32,7 @@
 	src: url('./fonts/ptsansbolditalic.woff2') format('woff2');
 	font-display: swap;
 }
-/* PT Sans Narrow */
+/* PT Sans Narrow bold */
 @font-face {
   font-family: "PT Sans Narrow";
   font-style: normal;
@@ -37,8 +40,12 @@
   src: url("./fonts/ptsansnarrowbold.woff2") format("woff2");
   font-display: swap;
 }
+/*
+	Загрузки шрифтов - Завершение
+*/
 
-* {
+
+* {						/* обнуление отступов, заданных по умолчанию в браузере, у всех элементов */
 	padding: 0;
 	margin: 0;
 }
@@ -52,10 +59,12 @@ body {
 	background-image: url('./images/bg-noisy-texture-light.png');
 }
 
+/* Все ссылки на сайте */
 a {
 	color: inherit;
 } 
 
+/* Все кнопки на сайте */
 .button {
 font-family: inherit;
 font-weight: 700;
@@ -68,7 +77,8 @@ color: #FFFFFF;
 background-color: #000;
 }
 
-/*
+/* Визуальное скрывания эелемнта со страницы в браузере 
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
