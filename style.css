@@ -34,7 +34,7 @@
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/ptsansnarrow.woff2") format("woff2");
+  src: url("./fonts/ptsansnarrowbold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -82,11 +82,13 @@ background-color: #000;
 	overflow: hidden;
 }*/
 
+/* Шапка сайта */
 .page-header {
 	color: #fff;
 	background-color: #000;
 }
 
+/* Ссылки на страницах */
 .page-header .navigation-link,
 .footer-socials a {
 	font-family: "PT Sans Narrow", sans-serif;
@@ -95,81 +97,7 @@ background-color: #000;
 	text-transform: uppercase;
 }
 
-
-.main-index {
-	color: #fff;
-	background-color: #000;
-	background-image: url('./images/index/bg-index.jpg');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-}
-.index-columns {
-	color: #242424;
-  background-color: #FBF7F4;
-	background-image: url('./images/bg-noisy-texture-light.png');
-}
-	.advantages-list {
-		text-align: center;
-	}
-	.advantages-title,
-	.services-title,
-	.gallery-title,
-	.contacts-title,
-	.appointment-title {
-		font-family: "PT Sans Narrow", sans-serif;
-		font-size: 32px;
-		line-height: 35px;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-
-	.services {
-		font-family: 'PT Sans Narrow';
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-		.services-list {
-			font-size: 20px;
-			line-height: 28px;
-		}
-		.services-price {
-			color: #af7842;
-		}
-	.contacts {
-		font-weight: 700;
-	}
-	.contacts-subtitle {
-		font-family: 'PT Sans Narrow', sans-serif;
-		font-size: 20px;
-		line-height: 28px;
-		text-transform: uppercase;
-		color: #AF7842;
-	}
-	.contacts-address,
-	.footer-contacts-address {
-		font-style: normal;
-	}
-	.contacts-phone {
-		font-family: 'PT Sans Narrow';
-		font-weight: 700;
-		font-size: 24px;
-		line-height: 29px;
-		text-transform: uppercase;
-		color: #242424;
-	}
-	.appointment-text {
-		font-size: 14px;
-		line-height: 20px;
-		color: #595959;
-	}
-	.appointment-label {
-		font-weight: 700;
-		font-size: 16px;
-		line-height:22PX;
-		text-transform: uppercase;
-		color: #242424;
-	}
-
+	/* Подвал сайта */
 .page-footer {
 	font-size: 14px;
 	line-height: 20px;
@@ -191,9 +119,182 @@ background-color: #000;
 	}
 
 	.about-text .htmlacademy-link {
+		font-family: "PT Sans", sans-serif;
 		font-weight: 700;
 		color: #DBB590;
 		text-transform: none;
 	}
 
+/* Главная страница */
 
+.main-index {
+	color: #fff;
+	background-color: #000;
+	background-image: url('./images/index/bg-index.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.index-columns {			/*	Обертка для секций 	*/
+	color: #242424;
+  background-color: #FBF7F4;
+	background-image: url('./images/bg-noisy-texture-light.png');
+}
+
+	/* Секция список преимуществ */
+	.advantages-list {
+		text-align: center;
+	}
+
+	/* Заголовки на главной странице */
+	.advantages-title,
+	.services-title,
+	.gallery-title,
+	.contacts-title,
+	.appointment-title {
+		font-family: "PT Sans Narrow", sans-serif;
+		font-size: 32px;
+		line-height: 35px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	/*	Секция список услуг */
+	.services {
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+		.services-list {
+			font-size: 20px;
+			line-height: 28px;
+		}
+		.services-price {
+			color: #af7842;
+		}
+
+	/* Секция контакты */
+	.contacts {
+		font-weight: 700;
+	}
+	.contacts-subtitle {
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 20px;
+		line-height: 28px;
+		text-transform: uppercase;
+		color: #AF7842;
+	}
+	.contacts-address,
+	.footer-contacts-address {	/* Одинаковый эелеиент в подвале сайта */
+		font-style: normal;
+	}
+	.contacts-phone {
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		text-transform: uppercase;
+		color: #242424;
+	}
+
+	/* Секция записаться  */
+	.appointment-text {
+		font-size: 14px;
+		line-height: 20px;
+		color: #595959;
+	}
+	.appointment-label {
+		font-weight: 700;
+		font-size: 16px;
+		line-height:22PX;
+		text-transform: uppercase;
+		color: #242424;
+	}
+
+
+/* Страница Каталог */
+
+.inner-header-title,				/*	Заголовки на странице */
+.catalog-filter-title {
+	font-family: 'PT Sans Narrow';
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.inner-header-title {				/* Главный заголовок страницы */
+	font-size: 32px;
+	line-height: 35px;
+}
+
+/* Навигация дополнительная */
+ .breadcrumbs {
+	line-height: 22px;
+}
+
+/* Фильтры каталога */
+.catalog-filter-title {
+	font-size: 20px;
+	line-height: 28px;
+	color: #000000;
+}
+.control-label {
+	font-weight: 700;
+	line-height: 22px;
+}
+.catalog-filter-label {
+	line-height: 22px;
+	text-align: center;
+}
+
+/* Секция сортировки */
+.sorting-container {
+  color: #000000;
+  background-color: #FFFFFF;
+	box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+}
+.button-light {
+	color: #242424;
+	background-color: #FFFFFF;
+}
+
+/* Список товаров*/
+.product-card {
+	background: #FFFFFF;
+	box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+}
+.product-card-link {
+	text-decoration: none;
+}
+.product-card-title {
+	font-size: 16px;
+}
+.product-card-price {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #814B18;
+}
+
+/* Переключение страниц найденных товаров "Пагинация" */
+.pagination {
+	background: #fff;
+	box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+}
+.pagination-link {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background: #000000;
+}
+.pagination-disabled {
+	background: #595959;
+}
+.pagination-current {
+	color: #242424;
+	background: #fff;
+}
