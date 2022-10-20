@@ -171,11 +171,11 @@ background-color: #000;
 	}
 
 	/*	Секция список услуг */
-	.services {
-		font-family: 'PT Sans Narrow', sans-serif;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
+.services {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
 		.services-list {
 			font-size: 20px;
 			line-height: 28px;
@@ -184,43 +184,42 @@ background-color: #000;
 			color: #af7842;
 		}
 
-	/* Секция контакты */
-	.contacts {
-		font-weight: 700;
-	}
-	.contacts-subtitle {
-		font-family: 'PT Sans Narrow', sans-serif;
-		font-size: 20px;
-		line-height: 28px;
-		text-transform: uppercase;
-		color: #AF7842;
-	}
-	.contacts-address,
-	.footer-contacts-address {	/* Одинаковый эелеиент в подвале сайта */
-		font-style: normal;
-	}
-	.contacts-phone {
-		font-family: 'PT Sans Narrow', sans-serif;
-		font-weight: 700;
-		font-size: 24px;
-		line-height: 29px;
-		text-transform: uppercase;
-		color: #242424;
-	}
-
-	/* Секция записаться  */
-	.appointment-text {
-		font-size: 14px;
-		line-height: 20px;
-		color: #595959;
-	}
-	.appointment-label {
-		font-weight: 700;
-		font-size: 16px;
-		line-height:22PX;
-		text-transform: uppercase;
-		color: #242424;
-	}
+/* Секция контакты */
+.contacts {
+	font-weight: 700;
+}
+		.contacts-subtitle {
+			font-size: 20px;
+			line-height: 28px;
+			color: #AF7842;
+		}
+		.contacts-address,
+		.footer-contacts-address {	/* Одинаковый эелеиент в подвале сайта */
+			font-style: normal;
+		}
+				.contacts-phone {
+					font-size: 24px;
+					line-height: 29px;
+					color: #242424;
+				}
+				.contacts-subtitle,
+				.contacts-phone {
+					font-family: 'PT Sans Narrow', sans-serif;
+					text-transform: uppercase;
+				}
+/* Секция записаться  */
+.appointment-text {
+	font-size: 14px;
+	line-height: 20px;
+	color: #595959;
+}
+.appointment-label {
+	font-weight: 700;
+	font-size: 16px;
+	line-height:22PX;
+	text-transform: uppercase;
+	color: #242424;
+}
 
 
 /* Страница Каталог */
