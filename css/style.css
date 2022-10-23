@@ -5,7 +5,7 @@
 	font-family: "PT sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url('./fonts/ptsans.woff2') format('woff2');
+	src: url('../fonts/ptsans.woff2') format('woff2');
 	font-display: swap;
 }
 /* PT Sans bold */
@@ -13,7 +13,7 @@
 	font-family: "PT sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url('./fonts/ptsansbold.woff2') format('woff2');
+	src: url('../fonts/ptsansbold.woff2') format('woff2');
 	font-display: swap;
 }
 /* PT Sans italic */
@@ -21,7 +21,7 @@
 	font-family: "PT sans";
 	font-style: italic;
 	font-weight: 400;
-	src: url('./fonts/ptsansitalic.woff2') format('woff2');
+	src: url('../fonts/ptsansitalic.woff2') format('woff2');
 	font-display: swap;
 }
 /* PT Sans italic bold */
@@ -29,7 +29,7 @@
 	font-family: "PT sans";
 	font-style: italic;
 	font-weight: 700;
-	src: url('./fonts/ptsansbolditalic.woff2') format('woff2');
+	src: url('../fonts/ptsansbolditalic.woff2') format('woff2');
 	font-display: swap;
 }
 /* PT Sans Narrow bold */
@@ -37,7 +37,7 @@
   font-family: "PT Sans Narrow";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/ptsansnarrowbold.woff2") format("woff2");
+  src: url("../fonts/ptsansnarrowbold.woff2") format("woff2");
   font-display: swap;
 }
 /*
@@ -49,15 +49,26 @@
 	margin: 0;
 } */
 
+html {
+	height: 100%;
+}
+
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	margin: 0;
 	font-family: "PT Sans", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #242424;
 	background-color: #FBF7F4;
-	background-image: url('./images/bg-noisy-texture-light.png');
+	background-image: url('../images/bg-noisy-texture-light.png');
 }
 
+.main-flex-grow {
+	flex-grow: 1;
+}
 /* Все ссылки на сайте */
 a {
 	color: inherit;
@@ -76,8 +87,6 @@ color: #FFFFFF;
 background-color: #000;
 }
 
-/* Визуальное скрывания эелемнта со страницы в браузере 
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -89,12 +98,26 @@ background-color: #000;
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}*/
+}
 
 /* Шапка сайта */
 .page-header {
 	color: #fff;
 	background-color: #000;
+}
+.navigation {
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+}
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
 }
 
 /* Основные интерактивные элементы ввиде ссылок */
@@ -112,8 +135,21 @@ background-color: #000;
 	line-height: 20px;
 	color: #fff;
 	background-color: #242424;
-	background-image: url('./images/bg-noisy-texture-dark.png');
+	background-image: url('../images/bg-noisy-texture-dark.png');
 }
+.page-footer-container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+}
+	.footer-contacts {
+		width: 200px;
+		margin-right: 130px;
+	}
+	.footer-socials {
+		margin-left: auto;
+		max-width: 190px;
+	}
 	.footer-title,
 	.footer-contacts-address-phone,
 	.footer-contacts-map-link {
@@ -139,24 +175,38 @@ background-color: #000;
 /* Главная страница */
 
 .main-index {
+	flex-grow: 1;
 	color: #fff;
 	background-color: #000;
-	background-image: url('./images/index/bg-index.jpg');
+	background-image: url('../images/index/bg-index.jpg');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
-
+.page-container {
+	width: 940px;
+	margin: 0 auto;
+}
+.logo {
+	display: block;
+	margin: 0 auto;
+}
 .index-columns {			/*	Обертка для секций 	*/
 	color: #242424;
   background-color: #FBF7F4;
-	background-image: url('./images/bg-noisy-texture-light.png');
+	background-image: url('../images/bg-noisy-texture-light.png');
 }
 
 	/* Секция список преимуществ */
 	.advantages-list {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
 		text-align: center;
 	}
-
+	.advantages-item {
+		width: 277px;
+	}
 	/* Заголовки на главной странице */
 	.advantages-title,
 	.services-title,
@@ -171,11 +221,17 @@ background-color: #000;
 	}
 
 	/*	Секция список услуг */
-.services {
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 40px;
 }
+	.services {
+		width: 390px;
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
 		.services-list {
 			font-size: 20px;
 			line-height: 28px;
@@ -183,9 +239,12 @@ background-color: #000;
 		.services-price {
 			color: #af7842;
 		}
-
+.gallery {
+	width: 390px;
+}
 /* Секция контакты */
 .contacts {
+	width: 352px;
 	font-weight: 700;
 }
 		.contacts-subtitle {
@@ -208,21 +267,28 @@ background-color: #000;
 					text-transform: uppercase;
 				}
 /* Секция записаться  */
-.appointment-text {
-	font-size: 14px;
-	line-height: 20px;
-	color: #595959;
+.appointment {
+	width: 430px;
 }
-.appointment-label {
-	font-weight: 700;
-	font-size: 16px;
-	line-height:22PX;
-	text-transform: uppercase;
-	color: #242424;
-}
+		.appointment-text {
+			font-size: 14px;
+			line-height: 20px;
+			color: #595959;
+		}
+		.appointment-label {
+			font-weight: 700;
+			font-size: 16px;
+			line-height:22PX;
+			text-transform: uppercase;
+			color: #242424;
+		}
 
 
 /* Страница Каталог */
+.navigation-logo {
+  width: 140px;
+  margin-right: 100px;
+}
 
 .inner-header-title,				/*	Заголовки на странице */
 .catalog-filter-title {
@@ -238,6 +304,13 @@ background-color: #000;
 /* Навигация дополнительная */
  .breadcrumbs {
 	line-height: 22px;
+}
+.catalog-products {
+	display: flex;
+}
+.catalog-filter {
+  width: 220px;
+  margin-right: 20px;
 }
 
 /* Фильтры каталога */
@@ -255,56 +328,59 @@ background-color: #000;
 	text-align: center;
 }
 
-/* Секция сортировки */
-.sorting-container {
-  color: #000000;
-  background-color: #FFFFFF;
-	box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+.catalog-right-column {		/* Обертка правой колонки (сортировка, список товаров, пагинация) */
+	width: 700px;
 }
-.button-light {
-	color: #242424;
-	background-color: #FFFFFF;
-}
+		/* Секция сортировки */
+		.sorting-container {
+			color: #000000;
+			background-color: #FFFFFF;
+			box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+		}
+		.button-light {
+			color: #242424;
+			background-color: #FFFFFF;
+		}
 
-/* Список товаров*/
-.product-card {
-	background: #FFFFFF;
-	box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
-}
-.product-card-link {
-	text-decoration: none;
-}
-.product-card-title {
-	font-size: 16px;
-}
-.product-card-price {
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 120%;
-	text-transform: uppercase;
-	color: #814B18;
-}
+		/* Список товаров*/
+		.product-card {
+			background: #FFFFFF;
+			box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+		}
+		.product-card-link {
+			text-decoration: none;
+		}
+		.product-card-title {
+			font-size: 16px;
+		}
+		.product-card-price {
+			font-family: 'PT Sans Narrow', sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 120%;
+			text-transform: uppercase;
+			color: #814B18;
+		}
 
-/* Переключение страниц найденных товаров "Пагинация" */
-.pagination {
-	background: #fff;
-	box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
-}
-.pagination-link {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 100%;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #fff;
-	background: #000000;
-}
-.pagination-disabled {
-	background: #595959;
-}
-.pagination-current {
-	color: #242424;
-	background: #fff;
-}
+		/* Переключение страниц найденных товаров "Пагинация" */
+		.pagination {
+			background: #fff;
+			box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+		}
+		.pagination-link {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 100%;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #fff;
+			background: #000000;
+		}
+		.pagination-disabled {
+			background: #595959;
+		}
+		.pagination-current {
+			color: #242424;
+			background: #fff;
+		}
