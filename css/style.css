@@ -110,16 +110,34 @@ background-color: #000;
 	width: 940px;
 	margin: 0 auto;
 }
-.navigation-list {
-  width: 430px;
-  margin: 0;
-  padding: 0;
+	.navigation-logo {
+		display: flex;
+		align-items: center;
+		width: 140px;
+		margin-right: 100px;
+	}
+	.navigation-list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 430px;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+		.navigation-link {
+			display: block;
+			padding: 24px 20px;
+		}
+	.navigation-user {
+		max-width: 250px;
+		margin-left: auto;
+	}
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
+	outline: 1px solid tomato;
+	outline-offset: -1px;
 }
-.navigation-user {
-  max-width: 250px;
-  margin-left: auto;
-}
-
 /* Основные интерактивные элементы ввиде ссылок */
 .page-header .navigation-link,
 .footer-socials a {
@@ -141,6 +159,7 @@ background-color: #000;
   display: flex;
   width: 940px;
   margin: 0 auto;
+	padding: 40px 0;
 }
 	.footer-contacts {
 		width: 200px;
@@ -149,6 +168,10 @@ background-color: #000;
 	.footer-socials {
 		margin-left: auto;
 		max-width: 190px;
+	}
+	.footer-title {
+		margin-top: 0;
+		margin-bottom: 14px;
 	}
 	.footer-title,
 	.footer-contacts-address-phone,
@@ -162,9 +185,23 @@ background-color: #000;
 	.footer-contacts-map-link {
 		line-height: 26px;
 	}
-	.footer-social-item {
-		background-color: #000;
+	.footer-social-list {
+		display: flex;
+		flex-wrap: wrap; 
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
 	}
+		.footer-social-item {
+			width: 56px;
+			height: 44px;
+			margin-right: 8px;
+			background-color: #000;
+		}
+		.footer-social-item:nth-child(3n) {
+			margin-right: 0;
+			margin-bottom: 8px;
+		}		
 	.about-text .htmlacademy-link {
 		font-family: "PT Sans", sans-serif;
 		font-weight: 700;
@@ -176,6 +213,8 @@ background-color: #000;
 
 .main-index {
 	flex-grow: 1;
+	padding-top: 64px; 
+  padding-bottom: 60px;
 	color: #fff;
 	background-color: #000;
 	background-image: url('../images/index/bg-index.jpg');
@@ -189,21 +228,41 @@ background-color: #000;
 .logo {
 	display: block;
 	margin: 0 auto;
+	margin-bottom: 64px;
 }
 .index-columns {			/*	Обертка для секций 	*/
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+	margin-bottom: 31px;
 	color: #242424;
   background-color: #FBF7F4;
 	background-image: url('../images/bg-noisy-texture-light.png');
 }
-
+.index-columns:last-child {
+	margin-bottom: 0;
+}
 	/* Секция список преимуществ */
+	.advantages {
+		margin-bottom: 58px;
+	}
 	.advantages-list {
 		display: flex;
 		justify-content: space-between;
 		margin: 0;
 		padding: 0;
+		list-style-type: none;
 		text-align: center;
 	}
+	/* Заголовки */
+.advantages-title {
+  margin-top: 0;
+  margin-bottom: 56px;
+}
+	/* Описание */
+.advantages-description {
+	margin: 0;
+} 
 	.advantages-item {
 		width: 277px;
 	}
@@ -213,6 +272,7 @@ background-color: #000;
 	.gallery-title,
 	.contacts-title,
 	.appointment-title {
+		margin-top: 0;
 		font-family: "PT Sans Narrow", sans-serif;
 		font-size: 32px;
 		line-height: 35px;
@@ -221,17 +281,15 @@ background-color: #000;
 	}
 
 	/*	Секция список услуг */
-.index-columns {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 40px;
-}
 	.services {
 		width: 390px;
 		font-family: 'PT Sans Narrow', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
+		.services-title {
+			margin-bottom: 28px;
+		}
 		.services-list {
 			font-size: 20px;
 			line-height: 28px;
@@ -242,39 +300,48 @@ background-color: #000;
 .gallery {
 	width: 390px;
 }
+	.gallery-title {
+		margin-bottom: 20px;
+	}
 /* Секция контакты */
 .contacts {
 	width: 352px;
 	font-weight: 700;
 }
-		.contacts-subtitle {
-			font-size: 20px;
-			line-height: 28px;
-			color: #AF7842;
+	.contacts-title {
+		margin-bottom: 24px;
+	}
+	.contacts-subtitle {
+		font-size: 20px;
+		line-height: 28px;
+		color: #AF7842;
+	}
+	.contacts-address,
+	.footer-contacts-address {	/* Одинаковый эелеиент в подвале сайта */
+		font-style: normal;
+	}
+		.contacts-phone {
+			font-size: 24px;
+			line-height: 29px;
+			color: #242424;
 		}
-		.contacts-address,
-		.footer-contacts-address {	/* Одинаковый эелеиент в подвале сайта */
-			font-style: normal;
+		.contacts-subtitle,
+		.contacts-phone {
+			font-family: 'PT Sans Narrow', sans-serif;
+			text-transform: uppercase;
 		}
-				.contacts-phone {
-					font-size: 24px;
-					line-height: 29px;
-					color: #242424;
-				}
-				.contacts-subtitle,
-				.contacts-phone {
-					font-family: 'PT Sans Narrow', sans-serif;
-					text-transform: uppercase;
-				}
 /* Секция записаться  */
 .appointment {
 	width: 430px;
 }
-		.appointment-text {
-			font-size: 14px;
-			line-height: 20px;
-			color: #595959;
-		}
+	.appointment-title {
+		margin-bottom: 20px;
+	}
+	.appointment-text {
+		font-size: 14px;
+		line-height: 20px;
+		color: #595959;
+	}
 		.appointment-label {
 			font-weight: 700;
 			font-size: 16px;
@@ -290,21 +357,35 @@ background-color: #000;
   margin-right: 100px;
 }
 
+.main-inner {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
 .inner-header-title,				/*	Заголовки на странице */
 .catalog-filter-title {
+	margin-top: 0;
 	font-family: 'PT Sans Narrow';
 	font-weight: 700;
 	text-transform: uppercase;
 }
 .inner-header-title {				/* Главный заголовок страницы */
+	margin-bottom: 16px;
 	font-size: 32px;
 	line-height: 35px;
 }
 
 /* Навигация дополнительная */
  .breadcrumbs {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	line-height: 22px;
 }
+	.breadcrumbs-link {
+		margin-right: 32px;
+	}
 .catalog-products {
 	display: flex;
 }
@@ -332,17 +413,40 @@ background-color: #000;
 	width: 700px;
 }
 		/* Секция сортировки */
-		.sorting-container {
-			color: #000000;
-			background-color: #FFFFFF;
-			box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+	.sorting-container {
+		display: flex;
+		padding: 16px;
+		margin-bottom: 16px;
+		color: #000000;
+		background-color: #FFFFFF;
+		box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+	}
+				.sorting-container .button {
+					width: 56px;
+					height: 44px;
+					outline: 1px solid tomato;
+					outline-offset: -1px;
+					
+				}
+				.button-light {
+					color: #242424;
+					background-color: #FFFFFF;
+				}
+		.sorting-type {
+			margin-right: auto;
 		}
-		.button-light {
-			color: #242424;
-			background-color: #FFFFFF;
-		}
+				.select-control {
+					width: 260px;
+					height: 44px;
+					box-sizing: border-box;
+				}
 
 		/* Список товаров*/
+	.product-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
 		.product-card {
 			background: #FFFFFF;
 			box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
@@ -363,24 +467,43 @@ background-color: #000;
 		}
 
 		/* Переключение страниц найденных товаров "Пагинация" */
+	.pagination-container {
+		display: flex;
+		padding: 16px;
+		margin-top: 24px;
+		background: #fff;
+		box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+	}
 		.pagination {
-			background: #fff;
-			box-shadow: 0px 4px 8px rgba(79, 70, 60, 0.16);
+			display: flex;
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
 		}
-		.pagination-link {
-			font-weight: 700;
-			font-size: 16px;
-			line-height: 100%;
-			text-align: center;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: #fff;
-			background: #000000;
-		}
-		.pagination-disabled {
-			background: #595959;
-		}
-		.pagination-current {
-			color: #242424;
-			background: #fff;
+			.pagination-item:not(:Last-child) {
+				margin-right: 8px;
+			}
+				.pagination-link {
+					display: block;
+					box-sizing: border-box;
+					width: 50px;
+					height: 44px;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 100%;
+					text-align: center;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: #fff;
+					background: #000000;
+				}
+				.pagination-disabled {
+					background: #595959;
+				}
+				.pagination-current {
+					color: #242424;
+					background: #fff;
+				}
+		.pagination-show-more {
+			margin-left: auto;
 		}
