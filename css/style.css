@@ -48,6 +48,11 @@
 * {						
 	margin: 0;
 } */
+input {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 html {
 	height: 100%;
@@ -342,14 +347,32 @@ background-color: #000;
 		line-height: 20px;
 		color: #595959;
 	}
-		.appointment-label {
-			font-weight: 700;
-			font-size: 16px;
-			line-height:22PX;
-			text-transform: uppercase;
-			color: #242424;
+	.appointment-form {
+		display: grid;
+		grid-template-columns: 114px 74px 208px;
+		grid-template-rows: repeat(3, auto);
+		gap: 19px 17px;
+	}
+		.field-group {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
 		}
-
+			.appointment-label {
+				font-weight: 700;
+				font-size: 16px;
+				line-height:22PX;
+				text-transform: uppercase;
+				color: #242424;
+			}
+		.appointment-form-name {
+			grid-column: 1 /-1;
+		}
+	.appointment-form .button {
+		grid-column: 1 / -1;
+		justify-self: start;
+		padding: 14px 18px 14px 20px;
+	}
 
 /* Страница Каталог */
 .navigation-logo {
