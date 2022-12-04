@@ -84,15 +84,27 @@ a {
 
 /* Все кнопки на сайте */
 .button {
-font-family: inherit;
-font-weight: 700;
-font-size: 16px;
-line-height: 16px;
-text-align: center;
-text-transform: uppercase;
-text-decoration: none;
-color: #FFFFFF;
-background-color: #000;
+	display: inline-block;
+	padding: 14px 20px;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #000;
+	border: none;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button.button-all {
+	padding-right: 44px;
+	background-image: url('/images/arrow-right.svg');
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-position: center right 20px;
 }
 
 .visually-hidden {
@@ -134,8 +146,26 @@ background-color: #000;
 	}
 		.navigation-link {
 			display: block;
+			position: relative;
 			padding: 24px 20px;
 		}
+		.navigation-link-login {
+			padding-left: 44px;
+		}
+			.navigation-link-login .navigation-icon {
+				right:auto;
+				left: 20px;
+				margin: auto 0;
+			}
+			.navigation-icon {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				fill: #DBDBDB;
+			}
 	.navigation-user {
 		max-width: 250px;
 		margin-left: auto;
@@ -143,8 +173,8 @@ background-color: #000;
 .navigation-user .navigation-link {
   min-width: 16px;
   min-height: 22px;
-	outline: 1px solid tomato;
-	outline-offset: -1px;
+/* 	outline: 1px solid tomato;
+	outline-offset: -1px; */
 }
 /* Основные интерактивные элементы ввиде ссылок */
 .page-header .navigation-link,
@@ -173,6 +203,25 @@ background-color: #000;
 		width: 200px;
 		margin-right: 130px;
 	}
+			.footer-contacts-logo {
+				display: block;
+				margin-bottom: 24px;
+			}
+			.footer-contacts-address {
+				margin: 0;
+				margin-bottom: 16px;
+				font-style: normal;
+			}
+			.about-text {
+				margin: 0;
+				margin-bottom: 4px;
+			}
+			.footer-contacts-address-phone {
+				display: block;
+			}
+			.footer-contacts-map-link {
+
+			}
 	.footer-socials {
 		margin-left: auto;
 		max-width: 190px;
@@ -193,10 +242,24 @@ background-color: #000;
 	.footer-contacts-map-link {
 		line-height: 26px;
 	}
+
+	.newsletter-form {
+		display: flex;
+	}
+		.newsletter-button {
+			width: 56px;
+			height: 44px;
+			background-image: url('/images/arrow-right.svg');
+			background-repeat: no-repeat;
+			background-size: 16px 16px;
+			background-position: center;
+		}
+
 	.footer-social-list {
 		display: flex;
 		flex-wrap: wrap; 
 		margin: 0;
+		margin-bottom: 28px;
 		padding: 0;
 		list-style-type: none;
 	}
@@ -299,12 +362,21 @@ background-color: #000;
 			margin-bottom: 28px;
 		}
 		.services-list {
+			margin: 0;
+			margin-bottom: 30px;
+			padding: 0;
 			font-size: 20px;
 			line-height: 28px;
+			list-style-type: none;
 		}
-		.services-price {
-			color: #af7842;
-		}
+		.services-item {
+			margin-bottom: 22px;
+		 }
+
+				.services-price {
+					color: #af7842;
+				}
+
 .gallery {
 	width: 390px;
 }
@@ -316,6 +388,13 @@ background-color: #000;
 	width: 352px;
 	font-weight: 700;
 }
+	.contacts-schedule {
+		margin: 8px 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.contacts-schedule-item {
+	}
 	.contacts-title {
 		margin-bottom: 24px;
 	}
@@ -324,10 +403,12 @@ background-color: #000;
 		line-height: 28px;
 		color: #AF7842;
 	}
-	.contacts-address,
-	.footer-contacts-address {	/* Одинаковый эелеиент в подвале сайта */
-		font-style: normal;
+	.contacts-address {
+		margin-bottom: 22px;
 	}
+		.contacts-address-text {
+			margin: 8px 0;
+		}
 		.contacts-phone {
 			font-size: 24px;
 			line-height: 29px;
@@ -338,6 +419,16 @@ background-color: #000;
 			font-family: 'PT Sans Narrow', sans-serif;
 			text-transform: uppercase;
 		}
+		.contacts-navigation {
+			margin-top: 21px;
+			margin-bottom: 0;
+		}
+		.button + .button {
+			margin-left: 16px;
+		}
+		.button-feedback {
+		}
+
 /* Секция записаться  */
 .appointment {
 	width: 430px;
