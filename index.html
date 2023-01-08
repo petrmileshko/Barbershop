@@ -30,11 +30,11 @@
 
 				<li class="navigation-item">
 					<a class="navigation-link" href="#">
-						<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+						<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
+							xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#a)">
 								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M11 6.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.7 5.2C9.3 12.5 8 13 6.5 13a6.5 6.5 0 1 1 5.2-2.7l4 4-1.4 1.4-4-4Z"
-									/>
+									d="M11 6.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.7 5.2C9.3 12.5 8 13 6.5 13a6.5 6.5 0 1 1 5.2-2.7l4 4-1.4 1.4-4-4Z" />
 							</g>
 						</svg>
 						<span class="visually-hidden">
@@ -44,11 +44,11 @@
 				</li>
 				<li class="navigation-item">
 					<a class="navigation-link" href="#">
-						<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+						<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
+							xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#a)">
 								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="m3 6 .6-5V0h8.8v1l.5 5h2.7l-.1 1.1-1 8-.1.9H1.6v-.9l-1-8L.3 6H3Zm2.1 0h5.8l-.4-4h-5L5 6Zm-1.7 8-.8-6h10.8l-.8 6H3.4Zm5.1-4.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z"
-									/>
+									d="m3 6 .6-5V0h8.8v1l.5 5h2.7l-.1 1.1-1 8-.1.9H1.6v-.9l-1-8L.3 6H3Zm2.1 0h5.8l-.4-4h-5L5 6Zm-1.7 8-.8-6h10.8l-.8 6H3.4Zm5.1-4.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z" />
 							</g>
 						</svg>
 						<span class="visually-hidden">
@@ -58,11 +58,11 @@
 				</li>
 				<li class="navigation-item">
 					<a class="navigation-link navigation-link-login" href="#">
-						<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+						<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
+							xmlns="http://www.w3.org/2000/svg">
 							<g clip-path="url(#a)">
 								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M9 2h5v12H9v2h7V0H9v2ZM4.3 3.7 7.5 7H0v2h7.5l-3.2 3.3 1.4 1.4 5-5 .7-.7-.7-.7-5-5-1.4 1.5Z"
-									/>
+									d="M9 2h5v12H9v2h7V0H9v2ZM4.3 3.7 7.5 7H0v2h7.5l-3.2 3.3 1.4 1.4 5-5 .7-.7-.7-.7-5-5-1.4 1.5Z" />
 							</g>
 						</svg>
 						Вход
@@ -139,38 +139,44 @@
 
 				<section class="gallery">
 					<h2 class="gallery-title">Фотогалерея</h2>
+					<div class="slider">
+						<div class="slider-wraper">
 
-					<img class="slider-image" src="./images/index/slider-image.jpg" alt="Примеры работ" width="390" height="250">
-					<button class="slider-button slider-prev" type="button">
-						<span class="visually-hidden">Предыдущее фото</span>
-					</button>
-					<button class="slider-button slider-next" type="button">
-						<span class="visually-hidden">Следующее фото</span>
-					</button>
+							<img class="slider-image" src="images/index/slider-image.jpg" alt="Примеры работ" width="390"
+								height="250">
+							<div class="slider-control">
+								<button class="slider-button slider-prev" type="button">
+									<span class="visually-hidden">Предыдущее фото</span>
+								</button>
 
-					<ol class="slider-pagination">
-						<li class="slider-pagination-item">
-							<button class="slider-pagination-button slider-pagination-button-current" type="button">
-								<span class="visually-hidden">1 фото</span>
-							</button>
-						</li>
-						<li class="slider-pagination-item">
-							<button class="slider-pagination-button" type="button">
-								<span class="visually-hidden">2 фото</span>
-							</button>
-						</li>
-						<li class="slider-pagination-item">
-							<button class="slider-pagination-button" type="button">
-								<span class="visually-hidden">3 фото</span>
-							</button>
-						</li>
-						<li class="slider-pagination-item">
-							<button class="slider-pagination-button" type="button">
-								<span class="visually-hidden">4 фото</span>
-							</button>
-						</li>
-					</ol>
-
+								<button class="slider-button slider-next" type="button">
+									<span class="visually-hidden">Следующее фото</span>
+								</button>
+							</div>
+							<ol class="slider-pagination">
+								<li class="slider-pagination-item">
+									<button class="slider-pagination-button slider-pagination-button-current" type="button">
+										<span class="visually-hidden">1 фото</span>
+									</button>
+								</li>
+								<li class="slider-pagination-item">
+									<button class="slider-pagination-button" type="button">
+										<span class="visually-hidden">2 фото</span>
+									</button>
+								</li>
+								<li class="slider-pagination-item">
+									<button class="slider-pagination-button" type="button">
+										<span class="visually-hidden">3 фото</span>
+									</button>
+								</li>
+								<li class="slider-pagination-item">
+									<button class="slider-pagination-button" type="button">
+										<span class="visually-hidden">4 фото</span>
+									</button>
+								</li>
+							</ol>
+						</div>
+					</div>
 				</section>
 			</div>
 

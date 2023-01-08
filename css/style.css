@@ -498,13 +498,82 @@ a {
 					order: 3;
 					color: #af7842;
 				}
-
+/* Секция Галерея слайдер*/
 .gallery {
 	width: 390px;
 }
 	.gallery-title {
 		margin-bottom: 20px;
 	}
+	.slider-wraper {
+		position: relative;
+	}
+	.slider-image {
+		display: block;
+	}
+	.slider-control {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.slider-button {
+		width: 48px;
+		height: 60px;
+		border: none;
+		cursor: pointer;
+		color: #fff;
+		background-color: #000;
+		background-image: url('/images/arrow-right.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.slider-button:hover {
+		background-color: #814B18;
+	}
+	.slider-button:focus {
+		background-color: #814B18;
+		outline: 2px solid #DBB590;
+	}
+	.slider-prev {
+		transform: rotate(180deg);
+	}
+	.slider-next {
+	}
+	.slider-pagination {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.slider-pagination-item {
+		margin: 0 4px;
+	}
+	.slider-pagination-button {
+		width: 8px;
+		height: 8px;
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: #BDBDBD;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	.slider-pagination-button:hover {
+		background-color: #AF7842;
+	}
+	.slider-pagination-button:focus {
+		outline: none;
+		background-color: #DBB590;
+	}
+	.slider-pagination-button-current {
+		background-color: #242424;
+	}
+
 /* Секция контакты */
 .contacts {
 	width: 352px;
