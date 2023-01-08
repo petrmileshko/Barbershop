@@ -732,19 +732,21 @@ a {
 	padding-top: 40px;
 	padding-bottom: 60px;
 }
-
-.inner-header-title,				/*	Заголовки на странице */
-.catalog-filter-title {
-	margin-top: 0;
-	font-family: 'PT Sans Narrow';
-	font-weight: 700;
-	text-transform: uppercase;
-}
-.inner-header-title {				/* Главный заголовок страницы */
-	margin-bottom: 16px;
-	font-size: 32px;
-	line-height: 35px;
-}
+	.inner-header {
+		margin-bottom: 32px;
+	}
+		.inner-header-title,				/*	Заголовки на странице */
+		.catalog-filter-title {
+			margin-top: 0;
+			font-family: 'PT Sans Narrow';
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		.inner-header-title {				/* Главный заголовок страницы */
+			margin-bottom: 16px;
+			font-size: 32px;
+			line-height: 35px;
+		}
 
 /* Навигация дополнительная */
  .breadcrumbs {
@@ -775,20 +777,87 @@ a {
 	.breadcrumbs-item:last-of-type::after {
 		content: none;
 	}
+
+	/* Секция каталога продуктов */
 .catalog-products {
 	display: flex;
 }
+
+/* Фильтры каталога */
+
 .catalog-filter {
   width: 220px;
   margin-right: 20px;
 }
-
-/* Фильтры каталога */
+.catalog-filter-group {
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+	border: none;
+}
 .catalog-filter-title {
 	font-size: 20px;
 	line-height: 28px;
 	color: #000000;
 }
+.range-scale {
+	position: relative;
+	height: 4px;
+	margin-bottom: 16px;
+	background-color: #242424;
+}
+.range-bar {
+	position: absolute;
+	height: 4px;
+	background-color: #AF7842;
+}
+.range-toggle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 2px solid #242424;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.range-toggle:hover {
+	background-color: #DBB590;
+}
+.range-toggle:active,
+.range-toggle:focus {
+	outline: 3px solid #DBB590;
+}
+.toggle-min {
+	top:-8px;
+	left:0;
+}
+.toggle-max {
+	top:-8px;
+	right: 0;
+}
+.range-wrapper-inputs {
+	display: flex;
+	justify-content: center;
+}
+.catalog-filter-label {
+	display: flex;
+	margin-right: 5px;
+}
+.catalog-filter-input {
+	width: 30px;
+	padding: 0 2px;
+	font: inherit;
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	appearance: textfield;
+}
+.catalog-filter-input::-webkit-outer-spin-button,
+.catalog-filter-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .control-label {
 	font-weight: 700;
 	line-height: 22px;
@@ -845,7 +914,10 @@ a {
 		}
 				.select-control {
 					width: 260px;
-					height: 44px;
+					padding: 8px 0 8px 14px;
+					font: inherit;
+					font-weight: 700;
+					line-height: 24px;
 					box-sizing: border-box;
 				}
 

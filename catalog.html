@@ -98,21 +98,29 @@
 
 					<fieldset class="catalog-filter-group">
 						<legend class="catalog-filter-title">Цена</legend>
+						<div class="range">
+							<div class="range-scale">
+								<div class="range-bar" style="left: 42px; width: 136px">
+									<button class="range-toggle toggle-min" type="button">
+										<span class="visually-hidden">Изменить минимальную цену.</span>
+									</button>
+									<button class="range-toggle toggle-max" type="button">
+										<span class="visually-hidden">Изменить максимальную цену.</span>
+									</button>
+								</div>
+							</div>
 
-						<button class="range-toggle toggle-min" type="button">
-							<span class="visually-hidden">Изменить минимальную цену.</span>
-						</button>
-						<button class="range-toggle toggle-max" type="button">
-							<span class="visually-hidden">Изменить максимальную цену.</span>
-						</button>
+							<div class="range-wrapper-inputs">
+								<label class="catalog-filter-label">
+									от<input class="catalog-filter-input" type="number" name="min-price" value="450"> ₽
+								</label>
 
-						<label class="catalog-filter-label">
-							от 50<input class="catalog-filter-input" type="number" name="min-price"> ₽
-						</label>
+								<label class="catalog-filter-label">
+									до<input class="catalog-filter-input" type="number" name="max-price"  value="1500" style="width: 39px"> ₽
+								</label>
+							</div>
+						</div>
 
-						<label class="catalog-filter-label">
-							до 1500<input class="catalog-filter-input" type="number" name="max-price"> ₽
-						</label>
 
 					</fieldset>
 
@@ -214,8 +222,8 @@
 						</form>
 
 						<a href="#" class="card-grid-toggle card-grid-toggle-current">
-							<svg aria-hidden="true" focusable="false" width="16" height="16"
-								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<svg aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink">
 								<g clip-path="url(#a)" fill-rule="evenodd" clip-rule="evenodd">
 									<path
 										d="M2 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-2 8a2 2 0 1 1 4 0 2 2 0 0 1-4 0ZM7 1a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H7ZM6 8c0-.6.4-1 1-1h8a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm1 5a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H7Z" />
@@ -229,8 +237,7 @@
 							<svg aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#a)">
 									<path fill-rule="evenodd" clip-rule="evenodd"
-										d="M0 2a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm6 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM0 8a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm-8 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"
-										/>
+										d="M0 2a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm6 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM0 8a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm-8 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Zm2 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm10 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
 								</g>
 							</svg>
 							<span class="visually-hidden">Показать карточки</span>
