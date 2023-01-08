@@ -55,6 +55,39 @@
 							Корзина
 						</span>
 					</a>
+					<div class="popover popover-cart">
+						<div class="popover-content">
+							<button class="popover-close-button button button-light">
+								2
+								<span class="visually-hidden">Закрыть</span>
+							</button>
+							<h2 class="popover-title">Корзина</h2>
+							<ul class="cart-items-list">
+								<li class="cart-item">
+									<p class="cart-item-title">Стрижка машинкой</p>
+									<p class="cart-item-price">800 ₽</p>
+									<button type="button" class="cart-item-button button">
+										<svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+										</svg>
+										<span class="visually-hidden">Удалить из корзины</span>
+									</button>
+								</li>
+								<li class="cart-item">
+									<p class="cart-item-title">Стрижка усов</p>
+									<p class="cart-item-price">1200 ₽</p>
+									<button class="cart-item-button button" type="button">
+										<svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
+										</svg>
+										<span class="visually-hidden">Удалить из корзины</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</li>
 				<li class="navigation-item">
 					<a class="navigation-link navigation-link-login" href="#">
@@ -233,7 +266,8 @@
 							<label class="form-label" for="appointment-phone">
 								Телефон
 							</label>
-							<input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 000-00-00">
+							<input class="field" type="text" id="appointment-phone" name="appointment-phone"
+								placeholder="+7 800 000-00-00">
 						</p>
 
 						<p class="field-group appointment-form-name">
