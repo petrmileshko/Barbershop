@@ -116,7 +116,8 @@
 								</label>
 
 								<label class="catalog-filter-label">
-									до<input class="catalog-filter-input" type="number" name="max-price"  value="1500" style="width: 39px"> ₽
+									до<input class="catalog-filter-input" type="number" name="max-price" value="1500" style="width: 39px">
+									₽
 								</label>
 							</div>
 						</div>
@@ -151,7 +152,7 @@
 							</li>
 							<li class="catalog-filter-item">
 								<label class="control">
-									<input class="visually-hidden control-input" type="checkbox" name="sprekenhus">
+									<input disabled class="visually-hidden control-input" type="checkbox" name="sprekenhus">
 									<span class="control-mark"></span>
 									<span class="control-label">Sprekenhus</span>
 								</label>
@@ -212,12 +213,14 @@
 					<!-- Настройка сортировки товаров -->
 					<div class="sorting-container">
 						<form class="sorting-type">
-							<label class="visually-hidden" for="sorting">Сортировка</label>
-							<select class="select-control" id="sorting" name="sorting">
-								<option value="popular">Сначала популярное</option>
-								<option value="cheap">Сначала дешёвое</option>
-								<option value="expensive">Сначала дорогое</option>
-							</select>
+							<div class="select">
+								<label class="visually-hidden" for="sorting">Сортировка</label>
+								<select class="select-control" id="sorting" name="sorting">
+									<option value="popular">Сначала популярное</option>
+									<option value="cheap">Сначала дешёвое</option>
+									<option value="expensive">Сначала дорогое</option>
+								</select>
+							</div>
 							<button class="visually-hidden" type="submit">Отсортировать продукты</button>
 						</form>
 

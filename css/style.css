@@ -796,6 +796,7 @@ a {
 	border: none;
 }
 .catalog-filter-title {
+	margin-bottom: 22px;
 	font-size: 20px;
 	line-height: 28px;
 	color: #000000;
@@ -866,7 +867,68 @@ a {
 	line-height: 22px;
 	text-align: center;
 }
+/* Check boxes */
+.catalog-filter-list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.control {
+	position: relative;
+	display: block;
+	padding-left: 36px;
+}
+.control-mark {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #242424;
+	top: 2px;
+	left: 0;
+}
+.control:hover .control-mark {
+	border-color: #AF7842;
+}
+.control-input:disabled + .control-mark {
+	border-color: #BDBDBD;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 2px;
+  background-color: #242424;
+  content: "";
+}
 
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-45deg);
+}
+
+/* Радио кнопки */
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
+
+.catalog-filter-item:not(:last-child) {
+	margin-bottom: 16px;
+}
 .catalog-right-column {		/* Обертка правой колонки (сортировка, список товаров, пагинация) */
 	width: 700px;
 }
@@ -912,14 +974,38 @@ a {
 		.sorting-type {
 			margin-right: auto;
 		}
-				.select-control {
-					width: 260px;
-					padding: 8px 0 8px 14px;
-					font: inherit;
-					font-weight: 700;
-					line-height: 24px;
-					box-sizing: border-box;
-				}
+		.select {
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 260px;
+			margin-right: auto;
+		}
+		
+		/* Control */
+		.select-control {
+			width: 100%;
+			padding: 8px 14px;
+			padding-right: 48px;
+			font: inherit;
+			font-weight: 700;
+			background-color: #FFFFFF;
+			border: 2px solid #242424;
+			background-image: url("/images/catalog/select-arrow.svg");
+			background-repeat: no-repeat;
+			background-position: right 16px center;
+			appearance: none;
+		}
+		
+		.select-control:hover,
+		.select-control:focus {
+			border-color: #AF7842;
+		}
+		
+		.select-control:focus {
+			outline: 2px solid #DBB590;
+		}
+		
 
 		/* Список товаров*/
 	.product-list {
