@@ -1209,3 +1209,100 @@ a {
 			padding-top: 24px;
 			border-top: 1px dashed #595959;
 		}
+
+/* Modal */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.modal-auth {
+  width: 360px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 44px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("/images/modal/btn-modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.auth-form .field-group {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+
+.auth-form-user-options {
+  display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.auth-form-user-options .control-label {
+  font-weight: 400;
+}
+
+.auth-form .field {
+  width: 100%;
+}
+
+.auth-form-recovery {
+  line-height: 22px;
+  color: #000000;
+}
+
+.auth-form-button {
+  width: 360px;
+  margin-bottom: 16px;
+}
+
+.auth-form .button + .button {
+  margin: 0;
+}
+
+.auth-form-register {
+  width: 360px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.modal-container-close {
+  display: none;
+}
