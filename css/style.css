@@ -1105,20 +1105,21 @@ a {
 					background-size: 16px 16px;
 					background-position: center;
 				}
-				.pagination-disabled {
-					background-color: #595959;
-				}
-				.pagination-current {
-					color: #242424;
-					background-color: #fff;
-				}
 				.pagination-link:hover {
 					background-color: #814B18;
 				}
-				
 				.pagination-link:focus {
 					outline: 2px solid #DBB590;
 					background-color: #4E2E0E;
+				}
+				.pagination-disabled,
+				.pagination-disabled:hover {
+					background-color: #595959;
+				}
+				.pagination-current,
+				.pagination-current:hover {
+					color: #242424;
+					background-color: #fff;
 				}
 				
 		.pagination-show-more {
