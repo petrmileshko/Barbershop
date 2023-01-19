@@ -29,7 +29,7 @@
 				</li>
 			</ul>
 
-			<ul class="navigation-list navigation-user">
+			<ul class="navigation-list navigation-user navigation-catalog">
 				<li class="navigation-item">
 					<a class="navigation-link" href="#">
 						<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
@@ -70,7 +70,7 @@
 									<p class="cart-item-title">Стрижка машинкой</p>
 									<p class="cart-item-price">800 ₽</p>
 									<button type="button" class="cart-item-button button">
-										<svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+										<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd" clip-rule="evenodd"
 												d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
 										</svg>
@@ -81,7 +81,7 @@
 									<p class="cart-item-title">Стрижка усов</p>
 									<p class="cart-item-price">1200 ₽</p>
 									<button class="cart-item-button button" type="button">
-										<svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+										<svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd" clip-rule="evenodd"
 												d="M3.42 1l.283-.496L3.991 0H12.01l.288.504.283.496h3.049l-.136 1.12-1.577 13-.107.88H2.191l-.107-.88-1.577-13L.371 1H3.42zm.543 13L2.629 3H13.37l-1.334 11H3.963zm5.04-9.071l-.5 7 1.995.142.5-7-1.995-.142zm-3.5 7.142l-.5-7 1.994-.142.5 7-1.994.142z" />
 										</svg>
@@ -146,7 +146,7 @@
 
 							<div class="range-wrapper-inputs">
 								<label class="catalog-filter-label">
-									от<input class="catalog-filter-input" type="number" name="min-price" value="450"> ₽
+									от<input class="catalog-filter-input" type="number" name="min-price" value="50"> ₽
 								</label>
 
 								<label class="catalog-filter-label">
@@ -250,9 +250,9 @@
 							<div class="select">
 								<label class="visually-hidden" for="sorting">Сортировка</label>
 								<select class="select-control" id="sorting" name="sorting">
-									<option value="popular">Сначала популярное</option>
+									<option value="popular">Сначала дорогое</option>
 									<option value="cheap">Сначала дешёвое</option>
-									<option value="expensive">Сначала дорогое</option>
+									<option value="expensive">Сначала популярное</option>
 								</select>
 							</div>
 							<button class="visually-hidden" type="submit">Отсортировать продукты</button>
